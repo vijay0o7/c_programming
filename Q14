@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int a,b,c,d, i;
+    printf("Enter The Principal value ");
+    scanf("%d", &a);
+    printf("the person is a senior citizen  :");
+    printf("\n1.Yes\n2.No\nEnter Your choice  :");
+    scanf("%d", &d);
+    printf("Enter The Years  :");
+    scanf("%d", &b);
+    c=b*12;
+    
+    if (d=1){
+    	i=(a*12/100)*c;
+    	printf("The Simple intrest is %d",i);
+	}
+    else if(d=2) {
+        i=(a*10/100)*c;
+        return 0;
+        }
+        
+    }
+
+    
+
