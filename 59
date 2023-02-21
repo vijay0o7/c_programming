@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+char line[1000];
+FILE *fpointer;
+fpointer = fopen("char.txt", "w");
+if(fpointer == NULL)
+{
+printf("Error!");
+exit(0);
+}
+printf("Enter a statement: ");
+fgets(line,1000,stdin);
+fprintf(fpointer,"%s", line);
+fclose(fpointer);
+return 0;
+}
