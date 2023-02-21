@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+printf("Welcome to DataFlair tutorials!\n\n");
+char character;
+FILE *fpointer;
+if ((fpointer = fopen("C:\\program.txt","r")) == NULL)
+{
+printf("Error! The file does not exist.");
+exit(0);
+}
+fscanf(fpointer,"%c", &character);
+printf("The character is: %c", character);
+fclose(fpointer);
+return 0;
+}
